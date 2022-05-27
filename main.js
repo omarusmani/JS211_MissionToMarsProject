@@ -15,6 +15,12 @@ let CrewMember = class {
     this.specialSkill=specialSkill;
     this.ship=ship;
   }
+  get enterShip(){
+    return this.enter()
+  }
+  
+  enter(ship){ //object in
+  }
 }
 let Ship = class{
   constructor(name,type,ability){
@@ -23,10 +29,14 @@ let Ship = class{
   this.ability=ability;
   this.crew=[];
   }
+  get missionStatement(){
+
+  }
+  mission(){
+
+  }
 }
-let enterShip = (CrewMember,ship) => {
-  this.ship.crew.pop(CrewMember)
-}
+
 // Your code will go here
 
 
