@@ -8,9 +8,26 @@ const jobTypes = {
   commander: 'Main Ship',
   programmer: 'Any Ship!'
 };
-
+let CrewMember = class {
+  constructor(name,job,specialSkill,ship){
+    this.name=name;
+    this.job=job;
+    this.specialSkill=specialSkill;
+    this.ship=ship;
+  }
+}
+let Ship = class{
+  constructor(name,type,ability){
+  this.name=name;
+  this.type=type;
+  this.ability=ability;
+  this.crew=[];
+  }
+}
+let enterShip = (CrewMember,ship) => {
+  this.ship.crew.pop(CrewMember)
+}
 // Your code will go here
-
 
 
 
